@@ -1,0 +1,40 @@
+{
+    "starwars" : [
+        {
+            "id": "01",
+            "nombre": "Mug Clone",
+            "precio": 20,
+            "imgsrc": "./assets/img/starwars/p01.svg"
+        },
+        {
+            "id": "02",
+            "nombre": "Darth Vader Funko",
+            "precio": 60,
+            "imgsrc": "./assets/img/starwars/p02.svg"
+        },
+        {
+            "id": "03",
+            "nombre": "Yoda Figure",
+            "precio": 60,
+            "imgsrc": "./assets/img/starwars/p03.svg"
+        },
+        {
+            "id": "04",
+            "nombre": "Clone Figure",
+            "precio": 60,
+            "imgsrc": "./assets/img/starwars/p04.svg"
+        },
+        {
+            "id": "05",
+            "nombre": "Grogu Figure",
+            "precio": 10,
+            "imgsrc": "./assets/img/starwars/p05.svg"
+        },
+        {
+            "id": "06",
+            "nombre": "Bad guy",
+            "precio": 50,
+            "imgsrc": "./assets/img/starwars/p06.svg"
+        }
+    ]
+}

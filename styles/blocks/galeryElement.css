@@ -1,0 +1,31 @@
+.galery__element{
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+    padding: .5rem;
+}
+.galery__element:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 0px 14px 0px #cec7c7;
+}
+.galery__element__img{
+    width: 13rem;
+}
+.galery__element__title{
+    font-size: 1.2rem;
+}
+.galery__element__price{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.galery__element__detail{
+    color: #2A7AE4;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    .galery__element__img{
+        width: 9rem;
+    }
+}

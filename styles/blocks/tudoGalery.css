@@ -1,0 +1,27 @@
+.tudo__galery{
+    margin: 3rem 5%;
+}
+.galery__headers{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.galery__seemore{
+    color: #2A7AE4;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.galery__elements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:480px) {
+    .galery__elements{
+        justify-content: center;
+    }
+}
