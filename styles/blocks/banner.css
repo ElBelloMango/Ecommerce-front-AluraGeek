@@ -1,0 +1,31 @@
+.tudo__banner{
+    position: relative;
+}
+.banner__img{
+    width: 100%;
+    object-fit: cover;
+    filter: blur(1px) saturate(110%);
+}
+.banner__title{
+    position:absolute;
+    top: 35%;
+    color:white;
+    left: 5%;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner__subtitle{
+    position:absolute;
+    top: 52%;
+    color:white;
+    left: 5%;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.banner__button{
+    position:absolute;
+    top: 68%;
+    left: 5%;
+    width: 10%;
+}
+
