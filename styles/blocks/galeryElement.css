@@ -4,7 +4,7 @@
     row-gap: .8rem;
     padding: .5rem;
     transition: all .3s;
-    min-width: 13rem;
+    min-width: 12rem;
     justify-content: space-between;
 }
 .galery__element:hover{

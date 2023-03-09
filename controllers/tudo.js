@@ -1,7 +1,6 @@
 import '../styles/blocks/banner.css'
 import '../styles/blocks/galeryElement.css'
 import '../styles/blocks/galery.css'
-import '../styles/blocks/tudoGalery.css'
 import { listProductos } from '../services/product-service'
 import { filterProducts,addToGalery } from './products.js'
 

@@ -4,3 +4,6 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.container{
+    margin: 3rem 5%;
+}

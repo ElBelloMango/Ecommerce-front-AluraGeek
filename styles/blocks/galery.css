@@ -1,6 +1,3 @@
-.galery{
-    margin-top: 2.3rem;
-}
 .galery__header{
     display: flex;
     justify-content: space-between;
@@ -30,4 +27,22 @@
     row-gap: 4rem;
     justify-content: space-around;
     margin: 2rem 0;
+}
+@media screen and (max-width:480px) {
+    .galery__elements{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:375px) {
+    .galery__addproduct{
+        font-size: 1rem;
+        width: 25%;
+    }
+    .galery__seemore{
+        font-size: 1.4rem;
+    }
+    .galery__header{
+        font-size: 1.5rem;
+    }
+    
 }

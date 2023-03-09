@@ -1,8 +1,0 @@
-.tudo__galeries{
-    margin: 3rem 5%;
-}
-@media screen and (max-width:480px) {
-    .galery__elements{
-        justify-content: center;
-    }
-}
