@@ -1,0 +1,33 @@
+.galery{
+    margin-top: 2.3rem;
+}
+.galery__header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.galery__seemore{
+    color: #2A7AE4;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.galery__seemore:hover{
+    text-shadow: 0px 1px 5px #cec7c7;
+}
+.galery__addproduct{
+    width: 15%;
+    font-size: 1rem;
+    text-align: center;
+}
+.galery__elements{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    justify-content: space-around;
+    margin: 2rem 0;
+}

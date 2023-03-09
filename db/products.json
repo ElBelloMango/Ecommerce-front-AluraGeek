@@ -4,85 +4,127 @@
             "id": "01",
             "nombre": "Mug Clone",
             "precio": 20,
-            "imgsrc": "./assets/img/starwars/p01.svg",
+            "imgsrc": "/assets/img/starwars/p01.svg",
             "categoria" : "Star Wars"
         },
         {
             "id": "02",
             "nombre": "Darth Vader Funko",
             "precio": 60,
-            "imgsrc": "./assets/img/starwars/p02.svg",
+            "imgsrc": "/assets/img/starwars/p02.svg",
             "categoria" : "Star Wars"
         },
         {
             "id": "03",
             "nombre": "Yoda Figure",
             "precio": 60,
-            "imgsrc": "./assets/img/starwars/p03.svg",
+            "imgsrc": "/assets/img/starwars/p03.svg",
             "categoria" : "Star Wars"
         },
         {
             "id": "04",
             "nombre": "Clone Figure",
             "precio": 60,
-            "imgsrc": "./assets/img/starwars/p04.svg",
+            "imgsrc": "/assets/img/starwars/p04.svg",
             "categoria" : "Star Wars"
         },
         {
             "id": "05",
             "nombre": "Grogu Figure",
             "precio": 10,
-            "imgsrc": "./assets/img/starwars/p05.svg",
+            "imgsrc": "/assets/img/starwars/p05.svg",
             "categoria" : "Star Wars"
         },
         {
             "id": "06",
             "nombre": "Bad guy",
             "precio": 50,
-            "imgsrc": "./assets/img/starwars/p06.svg",
+            "imgsrc": "/assets/img/starwars/p06.svg",
             "categoria" : "Star Wars"
         },
         {
             "id": "07",
             "nombre": "Control Xbox",
             "precio": 80,
-            "imgsrc": "./assets/img/consolas/p01.svg",
+            "imgsrc": "/assets/img/consolas/p01.svg",
             "categoria" : "Consolas"
         },
         {
             "id": "08",
             "nombre": "Play Station 5",
             "precio": 100,
-            "imgsrc": "./assets/img/consolas/p02.svg",
+            "imgsrc": "/assets/img/consolas/p02.svg",
             "categoria" : "Consolas"
         },
         {
             "id": "09",
             "nombre": "Nintendo",
             "precio": 20,
-            "imgsrc": "./assets/img/consolas/p03.svg",
+            "imgsrc": "/assets/img/consolas/p03.svg",
             "categoria" : "Consolas"
         },
         {
             "id": "10",
             "nombre": "Control Switch",
             "precio": 40,
-            "imgsrc": "./assets/img/consolas/p04.svg",
+            "imgsrc": "/assets/img/consolas/p04.svg",
             "categoria" : "Consolas"
         },
         {
             "id": "11",
             "nombre": "Xbox Series X",
             "precio": 100,
-            "imgsrc": "./assets/img/consolas/p05.svg",
+            "imgsrc": "/assets/img/consolas/p05.svg",
             "categoria" : "Consolas"
         },
         {
             "id": "12",
             "nombre": "Game Boy",
             "precio": 10,
-            "imgsrc": "./assets/img/consolas/p06.svg",
+            "imgsrc": "/assets/img/consolas/p06.svg",
             "categoria" : "Consolas"
+        },
+        {
+            "id": "13",
+            "nombre": "Camisa Atari",
+            "precio": 30,
+            "imgsrc": "/assets/img/diversos/p01.svg",
+            "categoria" : "Diversos"
+        },
+        {
+            "id": "14",
+            "nombre": "Camisa SNES",
+            "precio": 25,
+            "imgsrc": "/assets/img/diversos/p02.svg",
+            "categoria" : "Diversos"
+        },
+        {
+            "id": "15",
+            "nombre": "Figura Sonic",
+            "precio": 20,
+            "imgsrc": "/assets/img/diversos/p03.svg",
+            "categoria" : "Diversos"
+        },
+        {
+            "id": "16",
+            "nombre": "Despertador",
+            "precio": 15,
+            "imgsrc": "/assets/img/diversos/p04.svg",
+            "categoria" : "Diversos"
+        },
+        {
+            "id": "17",
+            "nombre": "VR Set",
+            "precio": 120,
+            "imgsrc": "/assets/img/diversos/p05.svg",
+            "categoria" : "Diversos"
+        },
+        {
+            "id": "18",
+            "nombre": "Disfraz Pikachu",
+            "precio": 70,
+            "imgsrc": "/assets/img/diversos/p06.svg",
+            "categoria" : "Diversos"
         }
     ]
 }

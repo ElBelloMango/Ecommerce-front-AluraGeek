@@ -5,6 +5,7 @@
     padding: .5rem;
     transition: all .3s;
     min-width: 13rem;
+    justify-content: space-between;
 }
 .galery__element:hover{
     transform: translateY(-1px);
@@ -24,6 +25,9 @@
     color: #2A7AE4;
     font-weight: 700;
     cursor: pointer;
+}
+.galery__element__id{
+    font-size: 1rem;
 }
 
 @media screen and (max-width:480px) {
