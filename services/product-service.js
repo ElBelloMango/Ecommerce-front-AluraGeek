@@ -16,3 +16,7 @@ export const agregarProducto = (producto) => {
         )
     })
 }
+
+export const getProducto = (id) =>{
+    return fetch(`http://localhost:3000/productos/${id}`).then(response => response.json())
+}

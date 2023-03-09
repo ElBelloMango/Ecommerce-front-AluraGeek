@@ -10,6 +10,7 @@
 .galery__element:hover{
     transform: translateY(-1px);
     box-shadow: 0px 0px 14px 0px #cec7c7;
+    cursor: pointer;
 }
 .galery__element__img{
     width: 100%;
