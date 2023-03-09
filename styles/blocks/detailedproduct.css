@@ -24,4 +24,8 @@
     font-size: 2rem;
     font-weight: 400;
 }
-
+@media screen and (max-width:768px) {
+    .product__image{
+        width: 100%;
+    }
+}

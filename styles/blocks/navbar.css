@@ -81,10 +81,12 @@
   }
 }
 
-@media screen and (max-width:768px) {}
 
 @media screen and (max-width:700px) {
   .navbar__search__input {
+    display: none;
+  }
+  .navbar__mode {
     display: none;
   }
 }
