@@ -13,6 +13,9 @@
 }
 .galery__element__img{
     width: 100%;
+    max-width: 192px;
+    height: 190px;
+    object-fit: cover;
 }
 .galery__element__title{
     font-size: 1.2rem;

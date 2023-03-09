@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/reset.css">
-  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/main.css">
   <title>Vite App</title>
 </head>
 
 <body>
-  <nav class="navbar">
+  <nav class="navbar navbar--button">
     <svg class="navbar__logo" width="176" height="50" viewBox="0 0 176 50" fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_1_242)">
@@ -64,14 +64,43 @@
           fill="#A2A2A2" />
       </svg>
     </div>
+    <a href="index.html" class="navbar__login">Login</a>
   </nav>
-  <main class="login">
-    <span class="login__title">Iniciar Sesión</span>
-    <form class="login__form">
-      <input class="input" type="emai" placeholder="Escriba su correo electrónico">
-      <input class="input" type="password" placeholder="Escriba su contraseña">
-      <button class="button" type="submit">Entrar</button>
-    </form>
+  <main class="tudo">
+    <section class="tudo__banner">
+      <img class="banner__img" src="./assets/img/banner-image.png" alt="">
+      <h1 class="banner__title banner__text">Marzo Promocional</h1>
+      <span class="banner__subtitle banner__text">Productos seleccionados con el 33% de descuento</span>
+      <a href="#consolas" class="button banner__button">Ver Consolas</a>
+    </section>
+    <section class="container">
+      <!-- Cambio probable haciendo multiples API CALLS -->
+      <div class="galery">
+        <div class="galery__header">
+          <h3 class="galery__title">Star Wars</h3>
+          <span class="galery__seemore"><a href="./productos.html">Ver Todo 🡢</a></span>
+        </div>
+        <div class="galery__elements" data-galery-starwars>
+        </div>
+      </div>
+      <div class="galery">
+        <div class="galery__header">
+          <h3 class="galery__title" id="consolas">Consolas</h3>
+          <span class="galery__seemore"><a href="./productos.html">Ver Todo 🡢</a></span>
+        </div>
+        <div class="galery__elements" data-galery-consoles>
+        </div>
+      </div>
+      <div class="galery">
+        <div class="galery__header">
+          <h3 class="galery__title">Diversos</h3>
+          <span class="galery__seemore"><a href="./productos.html">Ver Todo 🡢</a></span>
+        </div>
+        <div class="galery__elements" data-galery-diverse>
+        </div>
+      </div>
+      <!-- Fin cambio probable -->
+    </section>
   </main>
   <footer>
     <section class="footer">
@@ -140,8 +169,8 @@
       2023
     </section>
   </footer>
-  <script type="module" src="../controllers/base.js"></script>
-  <script type="module" src="../controllers/login.js"></script>
+  <script type="module" src="./controllers/base.js"></script>
+  <script type="module" src="./controllers/tudo.js"></script>
 </body>
 
 </html>

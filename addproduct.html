@@ -9,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Vite App</title>
 </head>
 
 <body>
     <nav class="navbar">
-        <svg class="navbar__logo" width="176" height="50" viewBox="0 0 176 50" fill="none"
+        <a href="./tudo.html">
+            <svg class="navbar__logo" width="176" height="50" viewBox="0 0 176 50" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_242)">
                 <path
@@ -56,6 +57,7 @@
                 </clipPath>
             </defs>
         </svg>
+        </a>
         <div class="navbar__search">
             <input placeholder="¿Qué deseas buscar?" class="navbar__search__input" type="text" name="search">
             <svg class="navbar__search__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -67,15 +69,23 @@
         </div>
         <span class="navbar__mode">Estás en modo administrador</span>
     </nav>
-    <main class="container">
-        <div class="galery">
-            <div class="galery__header">
-                <h3 class="galery__title">Todos los productos</h3>
-                <a class="galery__addproduct button" href="">Agregar Producto</a>
-            </div>
-            <div class="galery__elements" data-galery>
-            </div>
-        </div>
+    <main class="container addproduct">
+        <h1 class="addproduct__title">Agregar nuevo producto</h1>
+        
+        <form class="formadd" data-form-add>
+            <input name="imgsrc" class="input" type="text" placeholder="URL de la imagen">
+            <input name="categoria" class="input" type="text" placeholder="Categoria">
+            <input name="nombre" class="input" type="text" placeholder="Nombre del producto">
+            <input name="precio" class="input" type="number" placeholder="Precio del producto">
+            <textarea name="desc" class="input formadd__desc" rows="10"
+                placeholder="Descripcion del producto"></textarea>
+            <span class="success-message success-message--hidden">
+                Producto agregado exitosamente <br> 
+                Da click <a href="./tudo.html">Aquí</a> para volver a 
+                la página principal
+            </span>
+            <input class="button formadd__submit" type="submit" value="Agregar producto">
+        </form>
     </main>
     <footer>
         <section class="footer">
@@ -145,8 +155,11 @@
             2023
         </section>
     </footer>
-    <script type="module" src="../controllers/base.js"></script>
-    <script type="module" src="../controllers/products.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./controllers/base.js"></script>
+    <script type="module" src="./controllers/addproduct.js"></script>
 </body>
 
 </html>
