@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 5rem;
+    justify-content: space-around;
 }
 .product__image{
     width: 50%;

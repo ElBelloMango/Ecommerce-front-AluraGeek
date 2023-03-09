@@ -7,3 +7,10 @@ html{
 .container{
     padding: 3rem 5%;
 }
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}

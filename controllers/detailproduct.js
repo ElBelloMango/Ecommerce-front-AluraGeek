@@ -18,6 +18,13 @@ getProducto(params.get("id")).then((producto) => {
     listProductos().then((data) => {
         const itemsRelacionados = data.filter((elemento) => elemento.categoria == producto.categoria && elemento.id != producto.id);
         addToGalery(relatedGalery, itemsRelacionados.slice(0, 6));
-    });
-})
+    })
+}).catch((error)=>{
+    product.innerHTML = `<img class="product__image" src="https://www.lucushost.com/blog/wp-content/uploads/2022/07/ejemplo-http-error-503-servidor-litespeed.png" alt="">
+    <div class="product__description">
+        <h1 class="product__name">El servidor no responde</h1>
+        <span class="product__price"></span>
+        <p class="prodcut__details">Por favor intentelo más tarde</p>
+    </div>`
+});
 
