@@ -5,6 +5,7 @@
     padding: .5rem;
     transition: all .3s;
     min-width: 12rem;
+    max-width: 208px;
     justify-content: space-between;
 }
 .galery__element:hover{
@@ -17,6 +18,7 @@
     max-width: 192px;
     height: 190px;
     object-fit: cover;
+    justify-self: center;
 }
 .galery__element__title{
     font-size: 1.2rem;
