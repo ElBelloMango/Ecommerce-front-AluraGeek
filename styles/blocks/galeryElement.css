@@ -7,6 +7,7 @@
     min-width: 12rem;
     max-width: 208px;
     justify-content: space-between;
+    max-width: 208px;
 }
 .galery__element:hover{
     transform: translateY(-1px);
