@@ -1,22 +1,34 @@
-export const listProductos = () => {
-    return fetch(`http://localhost:3000/productos`).then(response => response.json()).catch((error)=>console.error(`Se presentó un error: ${error}`))
-}
+import data from "../db/products.js"
 
-export const agregarProducto = (producto) => {
-    return fetch("http://localhost:3000/productos", {
-            method: "POST",
-            headers: {
-                "Content-type": "application/json"
-            },
-            body: JSON.stringify(
-                {
-                    ...producto,
-                    "id": uuid.v4()
-                }
-            )
-        }).catch((error)=>console.error(`Se presentó un error: ${error}`))
-}
+const getLocalStorage = ()=> JSON.parse(localStorage.getItem("productos")) || [];
 
-export const getProducto = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`).then(response => response.json()).catch((error)=>console.error(`Se presentó un error: ${error}`))
-}
+export const listProductos = () => new Promise((resolve, reject) => {
+    let productosAdded = getLocalStorage();
+    if (productosAdded.length==0){
+        localStorage.setItem("productos",JSON.stringify(data.productos));
+        productosAdded = getLocalStorage();
+    }
+    resolve(productosAdded);    
+});
+
+
+export const agregarProducto = (producto) => new Promise((resolve, reject) => {
+    let productosAdded = getLocalStorage();
+    if (productosAdded.length==0){
+        localStorage.setItem("productos",JSON.stringify(data.productos));
+        productosAdded = getLocalStorage();
+    }
+    const addproduct = {...producto,"id": uuid.v4()}
+    productosAdded.push(addproduct);
+    localStorage.setItem("productos",JSON.stringify(productosAdded));
+    resolve(productosAdded); 
+});
+
+export const getProducto = (id) => new Promise((resolve, reject) => {
+    let productosAdded = getLocalStorage();
+    if (productosAdded.length==0){
+        localStorage.setItem("productos",JSON.stringify(data.productos));
+        productosAdded = getLocalStorage();
+    }
+    resolve(productosAdded.find((producto)=>producto.id == id));  
+});

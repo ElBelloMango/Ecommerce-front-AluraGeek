@@ -6,6 +6,7 @@
     transition: all .3s;
     min-width: 12rem;
     justify-content: space-between;
+    max-width: 208px;
 }
 .galery__element:hover{
     transform: translateY(-1px);
@@ -17,6 +18,7 @@
     max-width: 192px;
     height: 190px;
     object-fit: cover;
+    align-self: center;
 }
 .galery__element__title{
     font-size: 1.2rem;
