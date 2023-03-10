@@ -27,7 +27,7 @@ Vite             |   JSON SERVER |   CSS  |   HTML |   ES6
 <img width="102" alt="vite" src="https://user-images.githubusercontent.com/63006483/224161734-42ccd681-a37c-4024-90af-374fac887cfb.png">  |  <img width="109" alt="JsonServer" src="https://user-images.githubusercontent.com/63006483/224162260-41dbdb79-f929-40d4-b664-daa3f20388a2.png">  |  <img width="107" alt="css" src="https://user-images.githubusercontent.com/63006483/224161943-696ff54f-e8fb-4502-aa9f-02244f08b4cf.png">  |  <img width="102" alt="HTML" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU">  |  <img width="102" alt="ES6" src="https://www.howtogeek.com/wp-content/uploads/csit/2019/07/9608c9ff.png?height=200p&trim=2,2,2,2&crop=16:9">  
 
 # ¿Como visualizar?
-En github pages está una versión de la página usando datos estaticos y local storage para ilustrar lo que se puede hacer en la página sin el uso de una API.
+En github pages está una versión de la página usando datos estaticos y local storage para ilustrar lo que se puede hacer en la página con el uso de la API.
 Alternativamente se puede descargar el proyecto y seguir los siguientes pasos:
 - Instalar el proyecto: En el directorio raiz usar ```npm install``` para instalar todas las dependencias del proyecto.
 - Visualizar el proyecto: Usar el comando ```npm run dev``` para visualizar la página web en entorno de desarrollo. En caso de mostrar error 503 ver siguiente paso.
