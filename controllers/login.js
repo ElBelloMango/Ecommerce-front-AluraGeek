@@ -1,8 +1,7 @@
 import '../styles/blocks/login.css'
+const form = document.querySelector("[data-login-form]");
 
-const login = document.querySelector("[data-login]");
-
-login.addEventListener("submit",(event)=>{
-    event.preventDefault();
-    window.location = "./tudo.html"
+form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    window.location = "tudo.html"
 })

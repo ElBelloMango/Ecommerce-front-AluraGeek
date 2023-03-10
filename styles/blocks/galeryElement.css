@@ -5,6 +5,7 @@
     padding: .5rem;
     transition: all .3s;
     min-width: 12rem;
+    max-width: 208px;
     justify-content: space-between;
     max-width: 208px;
 }
@@ -18,7 +19,7 @@
     max-width: 192px;
     height: 190px;
     object-fit: cover;
-    align-self: center;
+    justify-self: center;
 }
 .galery__element__title{
     font-size: 1.2rem;
