@@ -127,10 +127,11 @@
         <span class="footer__contact__title">Hable con nosotros</span>
         <form class="footer__form">
           <div class="input__group">
-            <input class="input" type="text" name="nombre" placeholder="">
+            <input class="input" type="text" name="nombre" placeholder="nombre" required maxlength="40">
             <label for="nombre">Nombre</label>
           </div>
-          <textarea class="input form__textarea" name="mensaje" placeholder="Escribe tu mensaje" rows="10"></textarea>
+          <textarea class="input form__textarea" name="mensaje" placeholder="Escribe tu mensaje" required
+            maxlength="120" rows="10"></textarea>
           <input class="button" type="submit">
         </form>
       </div>
