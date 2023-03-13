@@ -40,8 +40,16 @@
     left: 10px;
     color: #A2A2A2;
     transition: all .2s linear;
+    pointer-events: none;
+}
+.input__group .input::placeholder{
+    opacity: 0;
 }
 .input__group > input:focus + label{
+    top: 10%;
+    font-size: 0.7rem;
+}
+input:not(:placeholder-shown) + label{
     top: 10%;
     font-size: 0.7rem;
 }
