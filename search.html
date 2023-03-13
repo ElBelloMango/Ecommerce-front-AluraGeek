@@ -26,17 +26,11 @@
         <span class="navbar__mode">Estás en modo administrador</span>
     </nav>
     <main class="container">
-        <div class="product" data-product>
-
-        </div>
-        <div class="galery">
-            <div class="galery__header">
-                <h3 class="galery__title" id="consolas">Productos similares</h3>
-                <span class="galery__seemore"><a href="./productos.html">Ver Todo 🡢</a></span>
-            </div>
-            <div class="galery__elements" data-galery-related>
-            </div>
-        </div>
+        <h1 class="search__title">Busqueda</h1>
+        <form class="search__form" data-form>
+            <input required type="text" class="search__terms" placeholder="¿Qué deseas buscar?">
+            <input type="submit" value="" class="search__button">
+        </form>
     </main>
     <footer>
         <section class="footer">
@@ -110,7 +104,7 @@
         integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="./controllers/base.js"></script>
-    <script type="module" src="./controllers/detailproduct.js"></script>
+    <script type="module" src="./controllers/search.js"></script>
 </body>
 
 </html>
