@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>Vite App</title>
-</head>
-
-<body>
-    <nav class="navbar">
-        <img class="navbar__logo" src="./assets/img/icons/logo.svg" alt="">
-        <form class="navbar__search" data-search-form>
-            <input required placeholder="¿Qué deseas buscar?" data-search-input class="navbar__search__input"
-                type="text" name="search">
-            <img class="navbar__search__icon" src="./assets/img/icons/seachicon.svg" alt="Alura Geek Logo"
-                data-search-button>
-        </form>
-        <span class="navbar__mode">Estás en modo administrador</span>
-    </nav>
-    <main class="container">
-        <div class="product" data-product>
-
-        </div>
-        <div class="galery">
-            <div class="galery__header">
-                <h3 class="galery__title" id="consolas">Productos similares</h3>
-                <span class="galery__seemore"><a href="./productos.html">Ver Todo 🡢</a></span>
-            </div>
-            <div class="galery__elements" data-galery-related>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <section class="footer">
-            <svg class="footer__logo" width="176" height="50" viewBox="0 0 176 50" fill="none"
+<svg width="176" height="50" viewBox="0 0 176 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_242)">
                     <path
@@ -80,37 +38,3 @@
                     </clipPath>
                 </defs>
             </svg>
-            <div class="foooter__links">
-                <a class="footer__link" href="">Quienes somos</a>
-                <a class="footer__link" href="">Política de privacidad</a>
-                <a class="footer__link" href="">Programa de fidelidad</a>
-                <a class="footer__link" href="">Nuestras tiendas</a>
-                <a class="footer__link" href="">Quiero ser franquiciado</a>
-                <a class="footer__link" href="">Anúncie aquí</a>
-            </div>
-            <div class="footer__contact">
-                <span class="footer__contact__title">Hable con nosotros</span>
-                <form class="footer__form">
-                    <div class="input__group">
-                        <input class="input" type="text" name="nombre" placeholder="nombre" required maxlength="40">
-                        <label for="nombre">Nombre</label>
-                    </div>
-                    <textarea class="input form__textarea" name="mensaje" placeholder="Escribe tu mensaje" required
-                        maxlength="120" rows="10"></textarea>
-                    <input class="button" type="submit">
-                </form>
-            </div>
-        </section>
-        <section class="footer__author">
-            Desarrollado por Miguel Gallego <Br>
-            2023
-        </section>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
-        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module" src="./controllers/base.js"></script>
-    <script type="module" src="./controllers/detailproduct.js"></script>
-</body>
-
-</html>
