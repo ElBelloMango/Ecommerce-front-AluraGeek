@@ -166,5 +166,11 @@
       "desc": "Sable laser del lado oscuro de la fuerza",
       "id": "e097ebe1-1f97-4313-be0b-71719c928fcb"
     }
+  ],
+  "usuarios": [
+    {
+      "id": "Juancho@gmail.com",
+      "password-hash": "f5a1d4392730136a6e26e8a60fc218d1b6869fdadf630a3336589c6a78d88a22"
+    }
   ]
 }

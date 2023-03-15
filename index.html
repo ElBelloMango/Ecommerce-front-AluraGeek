@@ -17,17 +17,15 @@
   <nav class="navbar">
     <img class="navbar__logo" src="./assets/img/icons/logo.svg" alt="">
     <form class="navbar__search" data-search-form>
-      <input required placeholder="¿Qué deseas buscar?" data-search-input class="navbar__search__input" type="text"
-        name="search">
-      <img class="navbar__search__icon" src="./assets/img/icons/seachicon.svg" alt="Alura Geek Logo" data-search-button>
     </form>
     <a class="navbar__login" href="/">Login</a>
   </nav>
   <main class="login">
     <span class="login__title">Iniciar Sesión</span>
     <form class="login__form" data-login-form>
-      <input class="input" type="emai" placeholder="Escriba su correo electrónico">
-      <input class="input" type="password" placeholder="Escriba su contraseña">
+      <input class="input" required type="email" placeholder="Escriba su correo electrónico">
+      <input class="input" required type="password" placeholder="Escriba su contraseña">
+      <span class="form__auth form__auth--hidden" data-auth>Los datos de inicio de sesión son incorrectos</span>
       <input type="submit" class="button" value="ingresar">
     </form>
   </main>
