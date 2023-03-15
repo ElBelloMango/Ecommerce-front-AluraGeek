@@ -21,7 +21,6 @@ export const getUser = (id) => {
         if (!response.ok) {
             throw new ErrorUsuario(response.statusText,response.status);
         }
-        console.log(response)
         return response.json();
     }).catch((error) => { 
         console.error(error.mensaje);
