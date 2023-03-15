@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <title>Vite App</title>
+    <title>Añadir Producto</title>
 </head>
 
 <body>
@@ -29,15 +29,15 @@
         <h1 class="addproduct__title">Agregar nuevo producto</h1>
 
         <form class="formadd" data-form-add>
-            <input name="imgsrc" class="input" type="text" placeholder="URL de la imagen">
-            <input name="categoria" class="input" type="text" placeholder="Categoria">
-            <input name="nombre" class="input" type="text" placeholder="Nombre del producto">
-            <input name="precio" class="input" type="number" placeholder="Precio del producto">
-            <textarea name="desc" class="input formadd__desc" rows="10"
+            <input required accept="image/*" name="imgsrc" class="formadd__image" type="file" value="" data-form-image>
+            <input required name="categoria" class="input" type="text" placeholder="Categoria">
+            <input required name="nombre" maxlength="20" class="input" type="text" placeholder="Nombre del producto">
+            <input required name="precio" class="input" type="number" placeholder="Precio del producto">
+            <textarea required name="desc" maxlength="150" class="input formadd__desc" rows="10"
                 placeholder="Descripcion del producto"></textarea>
             <span class="success-message success-message--hidden">
                 Producto agregado exitosamente <br>
-                Da click <a href="./tudo.html">Aquí</a> para volver a
+                Da click <a href="./tudo.html" style="color:red">Aquí</a> para volver a
                 la página principal
             </span>
             <input class="button formadd__submit" type="submit" value="Agregar producto">
