@@ -10,6 +10,7 @@ export default defineConfig({
         tudo: resolve(__dirname, 'tudo.html'),
         productos: resolve(__dirname, 'productos.html'),
         productdetails: resolve(__dirname, 'productdetails.html'),
+        search: resolve(__dirname, 'search.html'),
       },
     },
   },
