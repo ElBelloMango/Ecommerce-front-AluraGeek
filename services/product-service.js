@@ -5,7 +5,7 @@ export const listProductos = () => {
 }
 
 export const agregarProducto = (producto) => {
-    return fetch("${apiUrl}", {
+    return fetch(`${apiUrl}`, {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -35,5 +35,11 @@ export const updateProducto = async (id,updatedProduct) => {
             "Content-type": "application/json"
         },
         body: JSON.stringify(updated)
+    }).catch((error) => console.error(`Se presentó un error: ${error}`))
+}
+
+export const deleteProduct = (id) => {
+    return fetch(`${apiUrl}/${id}`,{
+        method: "DELETE",
     }).catch((error) => console.error(`Se presentó un error: ${error}`))
 }

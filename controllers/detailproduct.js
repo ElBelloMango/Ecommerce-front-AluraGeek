@@ -2,7 +2,7 @@ import '../styles/blocks/galery.css'
 import '../styles/blocks/addproduct.css'
 import '../styles/blocks/detailedproduct.css'
 
-import { getProducto, listProductos, updateProducto } from '../services/product-service.js';
+import { deleteProduct, getProducto, listProductos, updateProducto } from '../services/product-service.js';
 import { addToGalery } from './products.js';
 import { toBase64 } from './toBase64';
 
@@ -58,13 +58,25 @@ getProducto(params.get("id")).then((producto) => {
         const cancel = document.querySelector("[data-product-cancel]");
         product.addEventListener("submit", (event) => {
             event.preventDefault();
-            updateProducto(params.get("id"), formValues).then(()=>{window.location.reload()}).catch(e=>console.warn(e));
+            updateProducto(params.get("id"), formValues).then(() => { window.location.reload() }).catch(e => console.warn(e));
         })
         cancel.addEventListener("click", () => window.location.reload());
     })
 
     product_delete.addEventListener("click", () => {
+        const modal = document.querySelector(".modal__content");
+        const cancel = document.querySelector("[data-modal-cancel]");
+        const confirm = document.querySelector("[data-modal-confirm]");
+        const hideModal = (event) => {
+            if (event.target==modal.parentElement || event.target == cancel) modal.parentElement.classList.remove("confirm__modal--shown");
+        }
+        modal.parentElement.classList.add("confirm__modal--shown");
+        modal.parentElement.addEventListener("click",hideModal);
+        cancel.addEventListener("click",hideModal);
 
+        confirm.addEventListener("click",()=>{
+            deleteProduct(params.get("id")).then(()=>{window.location="./tudo.html"})
+        })
     })
 
     listProductos().then((data) => {

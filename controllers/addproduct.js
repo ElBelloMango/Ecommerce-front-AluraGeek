@@ -17,7 +17,7 @@ for (let i = 0; i < form.children.length; i++) {
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    toBase64e64(image.files[0]).then((encoded) => {
+    toBase64(image.files[0]).then((encoded) => {
         formValues = {...formValues, "imgsrc":encoded}
         agregarProducto(formValues).then(() => {
             success.classList.remove("success-message--hidden");
