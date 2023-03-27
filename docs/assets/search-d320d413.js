@@ -1,0 +1,1 @@
+import"./footer-1d411986.js";import"./base-0daf5ed6.js";const e=document.querySelector("[data-form]");e.addEventListener("submit",t=>{t.preventDefault();const o=e.children[0].value;window.location=`./productos.html?search=${o}`});

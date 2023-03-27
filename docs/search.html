@@ -11,15 +11,12 @@
         rel="stylesheet">
     
     
-    <title>Añadir Producto</title>
-  <script type="module" crossorigin src="./assets/addproduct-95b8395a.js"></script>
+    <title>Vite App</title>
+  <script type="module" crossorigin src="./assets/search-d320d413.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/footer-1d411986.js">
   <link rel="modulepreload" crossorigin href="./assets/base-0daf5ed6.js">
-  <link rel="modulepreload" crossorigin href="./assets/toBase64-f5fc9a40.js">
-  <link rel="modulepreload" crossorigin href="./assets/_commonjsHelpers-edff4021.js">
-  <link rel="modulepreload" crossorigin href="./assets/product-service-e2f75ab7.js">
   <link rel="stylesheet" href="./assets/footer-720333ff.css">
-  <link rel="stylesheet" href="./assets/toBase64-63d8f85a.css">
+  <link rel="stylesheet" href="./assets/search-353d0d7c.css">
 </head>
 
 <body>
@@ -33,22 +30,11 @@
         </form>
         <span class="navbar__mode">Estás en modo administrador</span>
     </nav>
-    <main class="container addproduct">
-        <h1 class="addproduct__title">Agregar nuevo producto</h1>
-
-        <form class="formadd" data-form-add>
-            <input required accept="image/*" name="imgsrc" class="formadd__image" type="file" value="" data-form-image>
-            <input required name="categoria" class="input" type="text" placeholder="Categoria">
-            <input required name="nombre" maxlength="20" class="input" type="text" placeholder="Nombre del producto">
-            <input required name="precio" class="input" type="number" placeholder="Precio del producto">
-            <textarea required name="desc" maxlength="150" class="input formadd__desc" rows="10"
-                placeholder="Descripcion del producto"></textarea>
-            <span class="success-message success-message--hidden">
-                Producto agregado exitosamente <br>
-                Da click <a href="./tudo.html" style="color:red">Aquí</a> para volver a
-                la página principal
-            </span>
-            <input class="button formadd__submit" type="submit" value="Agregar producto">
+    <main class="container">
+        <h1 class="search__title">Busqueda</h1>
+        <form class="search__form" data-form>
+            <input required type="text" class="search__terms" placeholder="¿Qué deseas buscar?">
+            <input type="submit" value="" class="search__button">
         </form>
     </main>
     <footer>
