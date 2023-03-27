@@ -33,6 +33,9 @@ Alternativamente se puede descargar el proyecto y seguir los siguientes pasos:
 - Visualizar el proyecto: Usar el comando ```npm run dev``` para visualizar la página web en entorno de desarrollo. En caso de mostrar error 503 ver siguiente paso.
 - Iniciar json-server: Usar el comando ```npx json-server -w db/products.json``` para iniciar la simulación de API. Ahora se pueden visualizar todos los productos traidos desde la API.
 
+En la rama master se encuentra la versión del proyecto usando json-server, esta también es la versión 2.0.1.
+En la rama prod se encuentra la versión del proyecto usando localStorage, esta también es la versión 2.0.0.
+
 ## Pasos extra:
 - Construir el proyecto: Usando ```npm run build``` se nos creará la carpeta dist con todo nuestro código listo para producción.
 
