@@ -1,4 +1,4 @@
-import"./footer-1d411986.js";import"./base-0daf5ed6.js";import{a as l}from"./products-3664da34.js";import{t as p}from"./toBase64-f5fc9a40.js";import{g as u,u as m,d as _,l as g}from"./product-service-e2f75ab7.js";import"./_commonjsHelpers-edff4021.js";const h=document.querySelector("[data-galery-related]");let d=document.querySelector("[data-product]");const s=new URL(window.location).searchParams;u(s.get("id")).then(e=>{d.innerHTML=`<img class="product__image" src=${e.imgsrc} alt="">
+import"./footer-1d411986.js";import"./base-0daf5ed6.js";import{a as l}from"./products-3664da34.js";import{t as p}from"./toBase64-f5fc9a40.js";import{g as u,u as m,d as _,l as g}from"./product-service-5ec05ae8.js";import"./_commonjsHelpers-edff4021.js";const h=document.querySelector("[data-galery-related]");let d=document.querySelector("[data-product]");const s=new URL(window.location).searchParams;u(s.get("id")).then(e=>{d.innerHTML=`<img class="product__image" src=${e.imgsrc} alt="">
         <div class="product__description">
             <div class="product__options" data-product-options>
                 <i class="fa-solid fa-pencil" data-product-edit></i>

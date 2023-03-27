@@ -1,3 +1,0 @@
-import"./footer-1d411986.js";import"./base-0daf5ed6.js";import{l as i}from"./product-service-e2f75ab7.js";import{b as r}from"./products-3664da34.js";import"./_commonjsHelpers-edff4021.js";const t=document.querySelector("[data-galery]"),e=new URL(window.location).searchParams.get("search");i().then(o=>{if(!e)r(t,o);else{const a=`
-            <h3 class="galery__title">Todas las coincidencias de: ${e.toLocaleUpperCase()}</h3>
-            <span class="galery__seemore"><a href="./productos.html">Ver Todo 🡢</a></span>`,s=document.querySelector(".galery__header");s.innerHTML=a;const c=new RegExp(e,"i"),l=o.filter(n=>c.test(n.nombre));r(t,l)}});
