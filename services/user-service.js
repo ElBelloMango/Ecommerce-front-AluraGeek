@@ -1,3 +1,5 @@
+import data from "../db/users.js"
+
 export const createUser = (user) => {
     return fetch(`http://localhost:3000/usuarios/`, {
         method: "POST",
@@ -17,13 +19,10 @@ export const getUser = (id) => {
         this.mensaje = mensaje; 
         this.codigo = codigo;  
     }
-    return fetch(`http://localhost:3000/usuarios/${id}`).then((response) => {
-        if (!response.ok) {
-            throw new ErrorUsuario(response.statusText,response.status);
+    return new Promise((resolve, reject) => {
+        if (!data['usuarios'].find((user)=>user.id == id)) {
+            throw new ErrorUsuario("Error ",404);
         }
-        return response.json();
-    }).catch((error) => { 
-        console.error(error.mensaje);
-        throw error; 
+        resolve(data['usuarios'].find((user)=>user.id == id));
     });
 }
