@@ -35,3 +35,8 @@ Alternativamente se puede descargar el proyecto y seguir los siguientes pasos:
 
 ## Pasos extra:
 - Construir el proyecto: Usando ```npm run build``` se nos creará la carpeta dist con todo nuestro código listo para producción.
+
+## Credenciales:
+Para el login se tiene una validación de credenciales desde el front simulando una validación hecha en el back, así mismo se envía la clave usando hash.
+- User: Juancho@gmail.com
+- Password: Juancho
